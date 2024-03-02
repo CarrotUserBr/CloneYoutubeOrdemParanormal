@@ -12,6 +12,11 @@ body {
     user-select: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 h3 {
     font-size: 1rem;
     font-weight: 500;
@@ -98,8 +103,8 @@ header {
     align-items: center;
     background: #F2F2F2;
     border-radius: 50%;
-    width: 2.5rem;
     height: 100%;
+    aspect-ratio: 1/1;
 }
 
 .profile {
@@ -278,4 +283,67 @@ main {
 .info__time__video {
     display: flex;
     gap: .125rem;
+}
+
+.body__home {
+    display: grid;
+    grid-template: "header header" 3.5rem "nav main" auto / .75fr 5fr;
+}
+
+.header__home {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.menu__item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu__item__active {
+    font-weight: 700;
+}
+
+.menu__item i {
+    font-size: 1.5rem;
+}
+
+.main__home {
+    padding: 1rem;
+    background: #F9F9F9;
+    grid-area: main;
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+}
+
+.video__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.video__card img {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.video__details{
+    display: flex;
+    gap: 1rem;
+}
+
+.video__details img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
 }

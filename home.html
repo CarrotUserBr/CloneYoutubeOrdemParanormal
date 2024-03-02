@@ -15,14 +15,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body>
+<body class="body__home">
     
-    <header>
+    <header class="header__home">
         <div class="nav__and__icon">
-            <nav>
-            </nav>
+            
             <i class="bi bi-list"></i>
-            <img src="./assets/img/youtube_logo.png" alt="">
+            <a href="./home.html"><img src="./assets/img/youtube_logo.png" alt="Youtube Logo"></a>
         </div>
         <div class="search__container">
             <div class="search__label__container">
@@ -47,61 +46,76 @@
         </div>
     </header>
 
-    <main>
-        <section class="video__and__details">
-            <iframe src="https://www.youtube.com/embed/23z-tCHgMGI?si=Hq7Fi8iVnN4Num42" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h1>"Equipe Kelvin" - Episódio 1 - O Segredo na Floresta RPG</h1>
-            <div class="channel__and__options__container">
-                <div class="channel__info__and__sub">
-                    <div class="channel__info__container">
-                        <img src="./assets/img/cellbit-profile.jpg" alt="Logo do Canal do Cellbit Lives">
-                        <div class="channel__info">
-                            <div class="channel__name">
-                                <h3>Cellbit Lives</h3>
-                                <i class="bi bi-check-circle-fill"></i>
+    <nav>
+        <div class="menu__item menu__item__active">
+            <i class="bi bi-house-door"></i>
+            <span>Início</span>
+        </div>
+        <div class="menu__item">
+            <i class="bi bi-compass"></i>
+            <span>Explorar</span>
+        </div>
+        <div class="menu__item">
+            <i class="bi bi-youtube"></i>
+            <span>Inscrições</span>
+        </div>
+        <div class="menu__item">
+            <i class="bi bi-disc"></i>
+            <span>YouTube Music</span>
+        </div>
+        <div class="menu__item">
+            <i class="bi bi-hand-thumbs-up"></i>
+            <span>Vídeos que gostei</span>
+        </div>
+        <div class="menu__item">
+            <i class="bi bi-clock"></i>
+            <span>Assistir mais tarde</span>
+        </div>
+        <div class="menu__item">
+            <i class="bi bi-download"></i>
+            <span>Downloads</span>
+        </div>
+        <div class="menu__item">
+            <i class="bi bi-film"></i>
+            <span>Filmes</span>
+        </div>
+        <div class="menu__item">
+            <i class="bi bi-book"></i>
+            <span>Aprender</span>
+        </div>
+        <div class="menu__item">
+            <i class="bi bi-award"></i>
+            <span>Esportes</span>
+        </div>
+    </nav>
+    <main class="main__home">
+        <a href="./ep1.html"><div class="video__card">
+            <img src="./assets/img/other__videos_img/image 1.png" alt="Thumb Episódio 1">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
+                    <p>“Equipe Kelvin” - Episódio 1 - O Segredo na Floresta RPG</p>
+                    <div class="item__info">
+                        <div class="channel__name__item__info">
+                            <span>Cellbit Lives</span>
+                            <i class="bi bi-check-circle-fill"></i>
+                        </div>
+                        <div class="info__video__item__info">
+                            <span>6,7 mi de visualizações</span>
+                            <div class="info__time__video">
+                                <span>•</span>
+                                <span>há 3 anos</span>
                             </div>
-                            <span>2,69 mi de inscritos</span>
                         </div>
-                    </div>
-                    <div class="option__container" id="subOption">
-                        <i class="bi bi-bell"></i>
-                        <p>Inscrito</p>
-                        <i class="bi bi-chevron-down"></i>
-                    </div>
-                </div>
-                <div class="options__video">
-                    <div id="likeContainer" class="option__container">
-                        <i class="bi bi-hand-thumbs-up"></i>
-                        <p>301 mil</p>
-                        <div id="dislikeOption">
-                            <i class="bi bi-hand-thumbs-down"></i>
-                        </div>
-                    </div>
-                    <div id="sharedOption" class="option__container">
-                        <i class="bi bi-share"></i>
-                        <p>Compartilhar</p>
-                    </div>
-                    <div id="downloadOption" class="option__container">
-                        <i class="bi bi-download"></i>
-                        <p>Download</p>
-                    </div>
-                    <div id="moreOption" class="option__container">
-                        <i class="bi bi-three-dots"></i>
-                    </div>
+                    </div>              
                 </div>
             </div>
-            <div class="video__desc">
-                <div class="info__video">
-                    <p>6,7 mi de visualizações</p>
-                    <p>há 3 anos</p>
-                </div>
-                <span>O primeiro episódio da nova série de RPG, que vai acontecer todo sábado às 18:00 na <a href="http://twitch.tv/cellbit"><img src="./assets/img/twitch_logo_14x14.png" alt="Twitch Logo">/cellbit</a></span>
-            </div>
-        </section>
-        <aside class="others__videos">
-            <div id="episode2" class="video__item">
-                <img src="./assets/img/other__videos_img/image 2.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div></a>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 2.png" alt="Thumb Episódio 2">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“O Sanatório” - Episódio 2 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -115,12 +129,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-            <div id="episode3" class="video__item">
-                <img src="./assets/img/other__videos_img/image 3.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 3.png" alt="Thumb Episódio 3">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“Aracnofobia” - Episódio 3 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -134,12 +151,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-            <div id="episode4" class="video__item">
-                <img src="./assets/img/other__videos_img/image 4.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 4.png" alt="Thumb Episódio 4">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“Despedida” - Episódio 4 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -153,12 +173,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-            <div id="episode5" class="video__item">
-                <img src="./assets/img/other__videos_img/image 5.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 5.png" alt="Thumb Episódio 5">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“A Casa” - Episódio 5 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -172,12 +195,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-            <div id="episode6" class="video__item">
-                <img src="./assets/img/other__videos_img/image 6.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 6.png" alt="Thumb Episódio 6">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“Virgulino” - Episódio 6 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -191,12 +217,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-            <div id="episode7" class="video__item">
-                <img src="./assets/img/other__videos_img/image 7.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 7.png" alt="Thumb Episódio 7">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“Cemitério” - Episódio 7 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -210,12 +239,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>              
                 </div>
             </div>
-            <div id="episode8" class="video__item">
-                <img src="./assets/img/other__videos_img/image 8.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 8.png" alt="Thumb Episódio 8">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“O Segredo” - Episódio 8 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -229,12 +261,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-            <div id="episode9" class="video__item">
-                <img src="./assets/img/other__videos_img/image 9.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 9.png" alt="Thumb Episódio 9">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“Santo Berço” - Episódio 9 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -248,12 +283,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-            <div id="episode10" class="video__item">
-                <img src="./assets/img/other__videos_img/image 10.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 10.png" alt="Thumb Episódio 10">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“Hotel” - Episódio 10 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -267,12 +305,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-            <div id="episode11" class="video__item">
-                <img src="./assets/img/other__videos_img/image 11.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 11.png" alt="Thumb Episódio 11">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“Símbolo” - Episódio 11 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -286,12 +327,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-            <div id="episode12" class="video__item">
-                <img src="./assets/img/other__videos_img/image 12.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 12.png" alt="Thumb Episódio 12">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“Torre” - Episódio 12 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -305,12 +349,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>              
                 </div>
             </div>
-            <div id="episode13" class="video__item">
-                <img src="./assets/img/other__videos_img/image 13.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 13.png" alt="Thumb Episódio 13">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“A Caverna” - Episódio 13 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -324,12 +371,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-            <div id="episode14" class="video__item">
-                <img src="./assets/img/other__videos_img/image 14.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 14.png" alt="Thumb Episódio 14">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“A Porta” - Episódio 14 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -343,12 +393,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-            <div id="episode15" class="video__item">
-                <img src="./assets/img/other__videos_img/image 15.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 15.png" alt="Thumb Episódio 15">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“Manancial” - Episódio 15 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -362,12 +415,15 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-            <div id="episode16" class="video__item">
-                <img src="./assets/img/other__videos_img/image 16.png" alt="Thumb do Video">
-                <div class="title__and__item__info">
+        </div>
+        <div class="video__card">
+            <img src="./assets/img/other__videos_img/image 16.png" alt="Thumb Episódio 16">
+            <div class="video__details">
+                <img src="./assets/img/cellbit-profile.jpg" alt="Logo Cellbit Lives">
+                <div class="video__details__info">
                     <p>“Equipe E” - Episódio 16 - O Segredo na Floresta RPG</p>
                     <div class="item__info">
                         <div class="channel__name__item__info">
@@ -381,11 +437,10 @@
                                 <span>há 3 anos</span>
                             </div>
                         </div>
-                    </div>
+                    </div>               
                 </div>
             </div>
-        </aside>
+        </div>
     </main>
-
 </body>
 </html>
